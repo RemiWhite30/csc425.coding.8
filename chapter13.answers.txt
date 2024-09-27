@@ -1,0 +1,7 @@
+/*
+Remi White
+Question 2:               total        used        free      shared  buff/cache   available
+Mem:           7938        1255         217          62        6465        6304
+I did not really know much about the normal memory, so I did not have much of an intuition.
+
+
