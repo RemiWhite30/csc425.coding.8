@@ -4,4 +4,32 @@ Question 2:               total        used        free      shared  buff/cache 
 Mem:           7938        1255         217          62        6465        6304
 I did not really know much about the normal memory, so I did not have much of an intuition.
 
+Question 4: 
+./memory-user 6
+              total        used        free      shared  buff/cache   available
+Mem:           7938        1292         215          63        6430        6266
+Swap:             0           0           0
+after previous ran for a little bit
+              total        used        free      shared  buff/cache   available
+Mem:           7938        1291         212          63        6434        6267
+Swap:             0           0           0
+./memory-user 123456
+              total        used        free      shared  buff/cache   available
+Mem:           7938        1297         206          63        6434        6261
+Swap:             0           0           0
+Processes killed:
+              total        used        free      shared  buff/cache   available
+Mem:           7938        1301         202          63        6434        6258
+Swap:             0           0           0
+This somewhat matched my expectation that as it ran longer there would be less free space. 
+The large amounts of memory cause there to be more used space. 
 
+Question 6:
+I faced the challenge of not knowing exactly how to add the size of bytes with the linux command, but figured out how to use the argument.
+I also struggled a little bit with getting it to stream through the array at first. 
+
+Question 7:
+I see different things taking up part of the address space. In addition to the code, heap, and stack, I see vvar, vdso, and vsyscall.
+
+Question 8:
+Some of the fields have higher values. It matches my expectation that the size would change with different amounts of used memory, but some of the others were unexpected. 
